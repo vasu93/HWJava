@@ -8,6 +8,7 @@ jobs:
     machine:
       enabled: true
       steps:
+        - checkout
         - run:
             name: SonarQube Status Check
             command: echo "Hello World"
