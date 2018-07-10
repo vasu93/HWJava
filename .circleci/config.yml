@@ -5,7 +5,9 @@
 version: 2
 jobs:
   build:
-    steps:
+    machine:
+      enabled: true
+      steps:
         - run:
           name: SonarQube Status Check
           command: echo "Hello World"
