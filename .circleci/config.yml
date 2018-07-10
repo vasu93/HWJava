@@ -7,11 +7,14 @@ jobs:
   build:
     machine:
       enabled: true
-      steps:
-        - checkout
-        - run:
-            name: SonarQube Status Check
-            command: echo "Hello World"
+        steps:
+          - checkout
+          - run:
+              name: SonarQube Status Check
+              command: echo "Hello World"
+          - run:
+              name: SonarQube Status Check
+              command: echo "Hello World"
     # docker:
       # # specify the version you desire here
       # - image: circleci/openjdk:8-jdk
